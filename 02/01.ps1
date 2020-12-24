@@ -8,5 +8,5 @@ $stopwatch =  [system.diagnostics.stopwatch]::StartNew()
 
 $scriptdir = Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
 $dateandtime = Get-Date -Format "dd_MM_yyyy_HH-mm"
-$input = Import-Csv -Path "$scriptdir\03.csv"
+$input = Import-Csv -Path "$scriptdir\01.csv"
 $input
