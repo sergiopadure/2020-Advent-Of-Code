@@ -36,4 +36,12 @@ function CountTrees {
     $trees
 }
 
-CountTrees -XStep 3 -Ystep 1
+$a = CountTrees -XStep 1 -Ystep 1
+$b = CountTrees -XStep 3 -Ystep 1
+$c = CountTrees -XStep 5 -Ystep 1
+$d = CountTrees -XStep 7 -Ystep 1
+$e = CountTrees -XStep 1 -Ystep 2
+
+$total = $a * $b * $c * $d * $e
+
+$total
