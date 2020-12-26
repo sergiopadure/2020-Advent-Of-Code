@@ -1,10 +1,8 @@
-#Advent of Code problem 03
-#Written by Padure Sergio
+#Advent of Code problem 04
+#Written by Padure Sergio with inspiration from https://www.reddit.com/r/PowerShell/comments/k6fjdt/advent_of_code_day_4_the_passport_problem/
 
 #Requires -Version 5.1
 #Requires -PSEdition Desktop
-
-#Based on: https://www.reddit.com/r/PowerShell/comments/k6fjdt/advent_of_code_day_4_the_passport_problem/
 
 function Test-Passport {
     [CmdletBinding()]

@@ -1,4 +1,4 @@
-#Advent of Code problem 03
+#Advent of Code problem 04
 #Written by Padure Sergio
 
 #Requires -Version 5.1
