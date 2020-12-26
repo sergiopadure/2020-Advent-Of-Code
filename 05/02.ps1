@@ -17,11 +17,17 @@ function Get-SeatID {
     )
     #$chars = $BoardingPass.toCharArray()
     $row = $BoardingPass.substring(0, 7) -replace 'F', '0' -replace 'B', '1'
-    $column = $BoardingPass.substring(7, 3)  -replace 'R', '1' -replace 'L', '0'
+    $column = $BoardingPass.substring(7, 3) -replace 'R', '1' -replace 'L', '0'
     ([convert]::ToInt32($row, 2) * 8) + [convert]::ToInt32($column, 2)
 }
 
-foreach ($line in $data){
+foreach ($line in $data) {
     $count += Get-SeatID -BoardingPass $line
 }
-$count | Sort-Object
+$seats = $count | Sort-Object
+$fullrange = $seats[0]..$seats[-1]
+foreach ($number in $fullrange){
+    if ($number -notin $seats){
+        $number
+    }
+}
